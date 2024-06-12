@@ -1,11 +1,11 @@
 nav2 {
-    background-color: #b81414;
+    background-color: #dfb83b;
     display: flex;
     justify-content: center;
     overflow: hidden;
-    max-width: 1200px; /* Dodaj maksymalną szerokość */
+    max-width: 800px; /* Dodaj maksymalną szerokość */
     margin: 0 auto; 
-    animation: slideIn 1.5s forwards;
+    animation: slideIn 2.5s forwards;
 }
 
 nav2 ul {
