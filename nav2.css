@@ -1,4 +1,4 @@
-nav {
+nav2 {
     background-color: #b81414;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@ nav {
     animation: slideIn 1.5s forwards;
 }
 
-nav ul {
+nav2 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,11 +16,11 @@ nav ul {
     display: flex;
 }
 
-nav ul li {
+nav2 ul li {
     float: left;
 }
 
-nav ul li a {
+nav2 ul li a {
     position: relative;
     display: block;
     color: white;
@@ -31,7 +31,7 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
-nav ul li a::after {
+nav2 ul li a::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -43,7 +43,7 @@ nav ul li a::after {
     transform: translateX(-50%);
 }
 
-nav ul li a:hover::after {
+nav2 ul li a:hover::after {
     width: calc(100% - 32px);
 }
 
