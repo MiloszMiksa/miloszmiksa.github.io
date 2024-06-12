@@ -1,0 +1,57 @@
+nav {
+    background-color: #b81414;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 1200px; /* Dodaj maksymalną szerokość */
+    margin: 0 auto; 
+    animation: slideIn 1.5s forwards;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    position: relative;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: calc(100% - 32px);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
