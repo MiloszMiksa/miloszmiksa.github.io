@@ -3,7 +3,7 @@ nav2 {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    max-width: 800px; /* Dodaj maksymalną szerokość */
+    max-width: 500px; /* Dodaj maksymalną szerokość */
     margin: 0 auto; 
     animation: slideIn 2.5s forwards;
 }
