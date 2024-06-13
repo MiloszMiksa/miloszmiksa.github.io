@@ -133,13 +133,6 @@
             width: 100%;
         }
 
-        @media screen and (max-width: 600px) {
-            .prev,
-            .next {
-                font-size: 18px;
-                padding: 12px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -167,8 +160,8 @@
     <section>
         <a href="#" id="dhcp-link">Serwer DHCP</a>
         <a href="#" id="dns-link">Serwer DNS</a>
-        <a href="#" id="ftp-link">Serwer FTP</a>
-        <a href="#" id="http-link">Serwer HTTP</a>
+        <a href="#" id="ftp-link">Server FTP</a> 
+    <a href="#" id="http-link">Server HTTP</a> 
     </section>
 
     <div id="dhcpModal" class="modal">
@@ -259,26 +252,17 @@
             <div class="mySlides ftp">
                 <img src="/LPR/LFT/p1.png" style="width:100%">
             </div>
-            <div class="mySlides ftp">
-                <img src="/LPR/LFT/p2.png" style="width:100%">
-            </div>
-            <div class="mySlides ftp">
-                <img src="/LPR/LFT/p3.png" style="width:100%">
-            </div>
-            <div class="mySlides ftp">
-                <img src="/LPR/LFT/p4.png" style="width:100%">
-            </div>
-            <div class="mySlides ftp">
-                <img src="/LPR/LFT/p5.png" style="width:100%">
-            </div>
-            <div class="mySlides ftp">
-                <img src="/LPR/LFT/p6.png" style="width:100%">
-            </div>
-            <div class="mySlides ftp">
-                <img src="/LPR/LFT/p7.png" style="width:100%">
-            </div>
             <a class="prev" onclick="plusSlides(-1, 'ftp')">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 'ftp')">&#10095;</a>
+        </div>
+    </div>
+    
+    <div id="httpModal" class="modal">
+        <span class="close" onclick="closeModal('httpModal')">&times;</span>
+        <div class="modal-content">
+            <!-- HTTP slides go here -->
+            <a class="prev" onclick="plusSlides(-1, 'http')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'http')">&#10095;</a>
         </div>
     </div>
 
@@ -287,45 +271,49 @@
     </footer>
 
     <script>
-        document.getElementById("dns-link").addEventListener("click", function(event) {
-            event.preventDefault();
-            openModal('dnsModal');
-        });
+        document.getElementById("ftp-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('ftpModal');
+});
 
-        document.getElementById("dhcp-link").addEventListener("click", function(event) {
-            event.preventDefault();
-            openModal('dhcpModal');
-        });
+document.getElementById("http-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('httpModal');
+});
 
-        function openModal(modalId) {
-            document.getElementById(modalId).style.display = "flex";
-            if(modalId === 'dnsModal') {
-                showSlides(slideIndex, 'dns');
-            } else if(modalId === 'dhcpModal') {
-                showSlides(slideIndex, 'dhcp');
-            }
-        }
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "flex";
+    if(modalId === 'dnsModal') {
+        showSlides(slideIndex, 'dns');
+    } else if(modalId === 'dhcpModal') {
+        showSlides(slideIndex, 'dhcp');
+    } else if(modalId === 'ftpModal') {
+        showSlides(slideIndex, 'ftp');
+    } else if(modalId === 'httpModal') {
+        showSlides(slideIndex, 'http');
+    }
+}
 
-        function closeModal(modalId) {
-            document.getElementById(modalId).style.display = "none";
-        }
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
 
-        var slideIndex = 1;
+var slideIndex = 1;
 
-        function plusSlides(n, modalClass) {
-            showSlides(slideIndex += n, modalClass);
-        }
+function plusSlides(n, modalClass) {
+    showSlides(slideIndex += n, modalClass);
+}
 
-        function showSlides(n, modalClass) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides " + modalClass);
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex-1].style.display = "block";
-        }
+function showSlides(n, modalClass) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides " + modalClass);
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
     </script>
 </body>
 </html>
