@@ -56,7 +56,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;    
         }
-        
+
         .modal {
             display: none;
             position: fixed;
@@ -67,6 +67,9 @@
             height: 100%;
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .modal-content {
@@ -79,12 +82,13 @@
 
         .close {
             position: absolute;
-            top: 15px;
-            right: 35px;
+            top: 10px;
+            right: 25px;
             color: #fff;
-            font-size: 40px;
+            font-size: 35px;
             font-weight: bold;
             transition: 0.3s;
+            z-index: 1001;
         }
 
         .close:hover,
@@ -105,13 +109,13 @@
             top: 50%;
             width: auto;
             padding: 16px;
-            margin-top: -50px;
             color: white;
             font-weight: bold;
             font-size: 20px;
             transition: 0.6s ease;
             border-radius: 0 3px 3px 0;
             user-select: none;
+            z-index: 1001;
         }
 
         .next {
@@ -126,6 +130,15 @@
 
         .modal img {
             margin-bottom: -4px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .prev,
+            .next {
+                font-size: 18px;
+                padding: 12px;
+            }
         }
     </style>
 </head>
@@ -156,23 +169,6 @@
         <a href="#" id="dhcp-link">Serwer DHCP</a>
     </section>
 
-    <div id="dnsModal" class="modal">
-        <span class="close" onclick="closeModal('dnsModal')">&times;</span>
-        <div class="modal-content">
-            <div class="mySlides dns">
-                <img src="/LPR/LDN/p1.png" style="width:100%">
-            </div>
-            <div class="mySlides dns">
-                <img src="/LPR/LDN/p2.png" style="width:100%">
-            </div>
-            <div class="mySlides dns">
-                <img src="/LPR/LDN/p3.png" style="width:100%">
-            </div>
-            <a class="prev" onclick="plusSlides(-1, 'dns')">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 'dns')">&#10095;</a>
-        </div>
-    </div>
-
     <div id="dhcpModal" class="modal">
         <span class="close" onclick="closeModal('dhcpModal')">&times;</span>
         <div class="modal-content">
@@ -185,8 +181,73 @@
             <div class="mySlides dhcp">
                 <img src="/LPR/LDH/p3.png" style="width:100%">
             </div>
+            <div class="mySlides dhcp">
+                <img src="/LPR/LDH/p4.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp">
+                <img src="/LPR/LDH/p5.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp">
+                <img src="/LPR/LDH/p6.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp">
+                <img src="/LPR/LDH/p7.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp">
+                <img src="/LPR/LDH/p8.png" style="width:100%">
+            </div>
             <a class="prev" onclick="plusSlides(-1, 'dhcp')">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 'dhcp')">&#10095;</a>
+        </div>
+    </div>
+
+    <div id="dnsModal" class="modal">
+        <span class="close" onclick="closeModal('dnsModal')">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p1.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p2.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p3.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p4.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p5.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p6.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p7.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p8.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p9.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p10.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p11.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p12.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p13.png" style="width:100%">
+            </div>
+            <div class="mySlides dns">
+                <img src="/LPR/LDN/p14.png" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 'dns')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'dns')">&#10095;</a>
         </div>
     </div>
 
@@ -206,7 +267,7 @@
         });
 
         function openModal(modalId) {
-            document.getElementById(modalId).style.display = "block";
+            document.getElementById(modalId).style.display = "flex";
             if(modalId === 'dnsModal') {
                 showSlides(slideIndex, 'dns');
             } else if(modalId === 'dhcpModal') {
@@ -235,6 +296,5 @@
             slides[slideIndex-1].style.display = "block";
         }
     </script>
-
 </body>
 </html>
