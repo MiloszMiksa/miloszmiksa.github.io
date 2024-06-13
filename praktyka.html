@@ -281,6 +281,17 @@ document.getElementById("http-link").addEventListener("click", function(event) {
     openModal('httpModal');
 });
 
+document.getElementById("dns-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            openModal('dnsModal');
+        });
+
+document.getElementById("dhcp-link").addEventListener("click", function(event) {
+            event.preventDefault();
+            openModal('dhcpModal');
+        });
+
+
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "flex";
     if(modalId === 'dnsModal') {
