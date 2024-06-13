@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Miłosz Miksa" />
+    <title>11 listopada</title>
+    <link rel="stylesheet" href="button.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #b81414;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>11 listopada</h1>
+    </header>
+    <div class="content">
+        <h2>Obsługa plików i katalogów</h2>
+    <pre>
+        ls – pozwala na wyświetlenie zawartości katalogu
+        pwd – wskazuje katalog w którym obecnie jesteś
+        cd – zmienia katalog
+        cd .. - cofa
+        mkdir – tworzenie nowego katalogu
+        rmdir – usuwanie katalogu
+        cat -pozwala na edycję pliku
+        touch – tworzy plik
+        rm – usuwa pliki
+        mv – zmiana lokalizacji pliku lub zmiana nazwy
+        cp – kopiowanie pliku
+        cp -r /etc/* /home/zawartość_etc/ - kopiuje zawartość katalogu etc do innego katalogu
+        mvdir – zmiana lokalizacji katalogu lub zmiana nazwy
+        . (.ukryty.txt) – ukrywa plik
+        ip address >> /srv/ip - przekierowanie do pliku
+    </pre>
+    <h2>Zarządzanie uprawnieniami</h2>
+    <pre>
+        chmod ugo+wrx plik.txt (u-user g-group o-others)
+        chmod 750 plik.txt 
+        0 Brak praw; 
+        1 prawo do uruchomienia; 
+        2 prawo do zapisu;
+        3 prawo do zapisu i wykonania; 
+        4 prawo do odczytu; 
+        5 prawo do odczytu i uruchomienia; 
+        6 prawo do odczytu i zapisu; 
+        7 prawo do odczytu zapisu i uruchomienia.
+        Chown nazwa_użytkownika:grupa nazwa_pliku
+    </pre>
+    <h2>Zarządzanie użytkownikami</h2>
+    <pre>
+        useradd -m -d /ścieżka do kat użytkownika/ nazwa_użytkownika – dodaje użytkownika
+        passwd nazwa_użytkownika -zmienia i nadaje hasło
+        passwd -x 8 nazwa_użytkownika – maksymalna liczba dni przed zmianą hasła
+        passwd -n 4 nazwa_użytkownika –minimalna liczba dni przed zmianą hasła
+        usermod -u 1051 nazwa_użytkownika -nadaje id 
+        usermod -e 28/05/2024 nazwa_użytkownika -data wygaśnięcia konta
+
+        groupadd nazwa_grupy – tworzy grupę
+        groupadd -g 1100 nazwa_grupy – tworzy grupę z id
+
+        usermod -g nazwa_grupy nazwa_uzytkownika -zmienia grupę użytkownika
+        usermod -G nazwa_grupy nazwa_uzytkownika – dodaje koleją grupę do użytkownika
+
+        cat /etc/passwd – pokazuje uzytkowników
+        cat /etc/group – pokazuje grupy
+        id nazwa_użytkownika – pokazuje informacje o użytkowniku
+    </pre>
+    <h2>Diagnostyka systemu</h2>
+    <pre>
+        lshw |less – wszystkie informacje
+        lshw -short |less – skrócone informacje
+        lshw -c (memorycpudisplaydisk) |less – konkretne informacje 
+        lscpu – inf o procesorze
+        lsmem – inf o pamięci
+        lspci – inf o szynach
+        free -m -h – informacje o RAM
+        uname --help -informacje o systemie
+        lsb_release -a – informacje o systemie (trzeba doinstalować)
+        id – pokazuje UID i GID użytkowników
+        whoami – pokazuje nazwę hosta
+        w oraz who – pokazuje oznaczenie terminala użytkownika
+        uptime lub top – pokazuje czas działania komputera
+        df – procent użycia dysku
+        umask – pokazuje maskę uprawnień do plików i katalogów
+    </pre>
+    <h2>Zarządzanie dyskami</h2>
+    <pre>
+        fdisk -l – wyświetla dyski
+        cfdisk – program do partycjonowania
+        mount /ścieżka do dysku/ /ścieżka docelowa/ - podłączanie dysku
+        umount /ścieżka do dysku/ - odłącz dysk
+        mkfs.nzawa_systemu_plików (np. mkfs.ext4) /ścieżka dysku/ - zmienia system plików
+    </pre>
+    <h2>Skrypty</h2>
+    <pre>
+        touch test.sh – utworzenie skryptu
+        #!/bin/sh    echo „zdane” – treść skryptu
+        sh test.sh – uruchomienie skryptu
+    </pre>
+    <h2>SSH (/etc/ssh/sshd_config)</h2>
+    <pre>
+        systemctl status sshd – stan SSH
+        systemctl start sshd – uruchomienie SSH
+        systemctl reload sshd – przeładowanie servera
+        ssh login@adressIP (-p numer_portu jeśli został zmieniony) – połączenie terminalowe
+    </pre>
+    <h2>Inne</h2>
+    <pre>
+        smartctl –all /dev/sda |less – wyświetla parametry S.M.A.R.T    
+        zip -r nazwa_archiwum.zip katalog1 katalog2 ... plik1 plik2 .. - pakowanie plików i katalogów
+        unzip nazwa_archiwum.zip - rozpakowywanie plików i katalogów
+        tar xfv archiwum.tar – rozpakowanie archiwum
+        tar cfv archiwum.tar zawartosc1 zawartosc2 zawartosc3 – tworzenie archiwum
+        alias NAZWA = „KOMENDA" – tworzenie aliasu
+        nmap -v adres_ip – skanowanie nmap
+    </pre>
+        <center><a href="praktyka.html"><button class="return-button">Powrót</button></a></center>   
+    </div>
+</body>
+</html>
