@@ -166,7 +166,13 @@
         <a href="#" id="dhcp-link">Serwer DHCP</a>
         <a href="#" id="dns-link">Serwer DNS</a>
         <a href="#" id="ftp-link">Server FTP</a> 
-    <a href="#" id="http-link">Server HTTP</a> 
+        <a href="#" id="http-link">Server HTTP</a> 
+        <a href="#" id="dhcp2-link">Serwer DHCP</a>
+        <a href="#" id="dns2-link">Serwer DNS</a>
+        <a href="#" id="ftp2-link">Server FTP</a>
+        <a href="#" id="iis-link">Server IIS</a>
+        <a href="#" id="ad-link">Server AD</a>
+        <a href="#" id="nat-link">Server NAT</a>
     </section>
 
     <div id="dhcpModal" class="modal">
@@ -318,6 +324,119 @@
         </div>
     </div>
 
+    <div id="dhcp2Modal" class="modal">
+        <span class="close" onclick="closeModal('dhcp2Modal')">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p1.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p2.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p3.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p4.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p5.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p6.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p7.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p8.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p9.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p10.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p11.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p12.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p13.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p14.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p15.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p16.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p17.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p18.png" style="width:100%">
+            </div>
+            <div class="mySlides dhcp2">
+                <img src="/WPR/WDH/p19.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'dhcp2')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'dhcp2')">&#10095;</a>
+        </div>
+    </div>
+    
+    <div id="dns2Modal" class="modal">
+        <span class="close" onclick="closeModal('dns2Modal')">&times;</span>
+        <div class="modal-content">
+            <!-- DNS2 slides go here -->
+            <a class="prev" onclick="plusSlides(-1, 'dns2')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'dns2')">&#10095;</a>
+        </div>
+    </div>
+    
+    <div id="ftp2Modal" class="modal">
+        <span class="close" onclick="closeModal('ftp2Modal')">&times;</span>
+        <div class="modal-content">
+            <!-- FTP2 slides go here -->
+            <a class="prev" onclick="plusSlides(-1, 'ftp2')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'ftp2')">&#10095;</a>
+        </div>
+    </div>
+    
+    <div id="iisModal" class="modal">
+        <span class="close" onclick="closeModal('iisModal')">&times;</span>
+        <div class="modal-content">
+            <!-- IIS slides go here -->
+            <a class="prev" onclick="plusSlides(-1, 'iis')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'iis')">&#10095;</a>
+        </div>
+    </div>
+    
+    <div id="adModal" class="modal">
+        <span class="close" onclick="closeModal('adModal')">&times;</span>
+        <div class="modal-content">
+            <!-- AD slides go here -->
+            <a class="prev" onclick="plusSlides(-1, 'ad')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'ad')">&#10095;</a>
+        </div>
+    </div>
+    
+    <div id="natModal" class="modal">
+        <span class="close" onclick="closeModal('natModal')">&times;</span>
+        <div class="modal-content">
+            <!-- NAT slides go here -->
+            <a class="prev" onclick="plusSlides(-1, 'nat')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'nat')">&#10095;</a>
+        </div>
+    </div>
+    
+    
+    
     <footer>
         &copy; 2024 INF 02
     </footer>
@@ -343,6 +462,34 @@ document.getElementById("dhcp-link").addEventListener("click", function(event) {
             openModal('dhcpModal');
         });
 
+document.getElementById("dhcp2-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('dhcp2Modal');
+});
+
+document.getElementById("dns2-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('dns2Modal');
+});
+
+document.getElementById("ftp2-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('ftp2Modal');
+});
+
+document.getElementById("iis-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('iisModal');
+});
+
+document.getElementById("ad-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('adModal');
+});
+
+document.getElementById("nat-link").addEventListener("click", function(event) {
+    event.preventDefault();
+    openModal('natModal');
 
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "flex";
@@ -354,6 +501,18 @@ function openModal(modalId) {
         showSlides(slideIndex, 'ftp');
     } else if(modalId === 'httpModal') {
         showSlides(slideIndex, 'http');
+    } else if(modalId === 'dhcp2Modal') {
+        showSlides(slideIndex, 'dhcp2');
+    } else if(modalId === 'dns2Modal') {
+        showSlides(slideIndex, 'dns2');
+    } else if(modalId === 'ftp2Modal') {
+        showSlides(slideIndex, 'ftp2');
+    } else if(modalId === 'iisModal') {
+        showSlides(slideIndex, 'iis');
+    } else if(modalId === 'adModal') {
+        showSlides(slideIndex, 'ad');
+    } else if(modalId === 'natModal') {
+        showSlides(slideIndex, 'nat');
     }
 }
 
