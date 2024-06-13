@@ -71,14 +71,11 @@
     </nav2>
 
     <section>
+        <li><a href="#" id="openGallery">Linux DNS</a></li>
         <div class="gallery">
             <a href="LPR/LDN/p1.png" data-lightbox="gallery" data-title="Obraz 1"><img src="LPR/LDN/p1.png" alt="Obraz 1"></a>
             <a href="LPR/LDN/p2.png" data-lightbox="gallery" data-title="Obraz 2"><img src="LPR/LDN/p2.png" alt="Obraz 2"></a>
             <a href="LPR/LDN/p3.png" data-lightbox="gallery" data-title="Obraz 3"><img src="LPR/LDN/p3.png" alt="Obraz 3"></a>
-        </div>
-
-        <div class="gallery">
-            <a href="images/t1.png" data-lightbox="gallery" data-title="Obraz 1"><img src="images/t1.png" alt="Obraz 1"></a>
         </div>
 
         
@@ -90,6 +87,12 @@
     </footer>
 
     <script src="path/to/lightbox-plus-jquery.js"></script>
+    <script>
+        document.getElementById('openGallery').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('.gallery a').click();
+        });
+    </script>
 
 </body>
 </html>
