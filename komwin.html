@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Miłosz Miksa" />
+    <title>Miłosz Miksa</title>
+    <link rel="stylesheet" href="button.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #b81414;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center><h1>Komendy Windows</h1></center>
+    </header>
+    <div class="content">
+        <h2>Zarządzanie użytkownikami</h2>
+    <pre>
+Lista kont użytkowników w systemie: net user
+Tworzenie konta użytkownika: net user nazwa_użytkownika /add
+Ustawienie hasła użytkownika: net user nazwa_użytkownika hasło użytkownika
+Wymuszenie zmiany hasła użytkownika po zalogowaniu: net user nazwa użytkownika /logonpasswordchg:yes
+Zablokowanie możliwości zmiany hasła użytkownika: net user nazwa_użytkownika /passwordchg:no
+Ograniczenie czasu pracy użytkownika: net user nazwa_użytkownika /times:Pn-Wt1-12 !wyjątek Niedziela w całości!
+Wyświetlenie ustawień konta użytkownika: net user nazwa_użytkownika
+Ustawienie daty wygaśnięcia konta użytkownika: net user nazwa_użytkownika /expires:12/06/24
+Ustawienie komentarza dla konta użytkownika: net user nazwa_użytkownika /comment:"treść_komentarza"
+Dodatnie pełnej nazwy konta użytkownika: net user nazwa_użytkownika /fullname:"Pełna nazwa"
+Dezaktywacja konta użytkownika: net user nazwa konta /active:no
+Usunięcie konta użytkownika: net user nazwa konta /del
+Net accounts -pokazuje ustawienia
+    </pre>
+    <h2>Zarządzanie grupami</h2>
+    <pre>
+Lista grup użytkowników w systemie: net localgroup
+Tworzenie grupy: net localgroup nazwa_grupy /add
+Dodanie konta użytkownika do grupy lokalnej: net localgroup nazwa grupy nazwa konta /add
+    </pre>
+    <h2>Przystawki</h2>
+    <pre>
+compmgmt.msc ----> Zarządzanie komputerem  
+devmgmt.msc ----> Menadżer urządzeń  
+dfrg.msc ----> Defragmentator dysków
+dhcpmgmt.msc ----> Menedżer DHCP
+diskmgmt.msc ----> Zarządzanie dyskami
+dnsmgmt.msc ----> Menedżer DNS
+eventvwr.msc ----> Podgląd zdarzeń 
+fsmgmt.msc -—---> Foldery udostępnione 
+gpedit.msc ----> Zasady grupy 
+gpmc.msc ----> Zarządzenie zasadami grupy
+lusrmgr.msc ----> Użytkownicy i grupy lokalne
+printmanagement.msc ----> Zarządzanie drukowaniem
+rsop.msc ----> Wynikowy zestaw zasad
+secpol.msc ----> Ustawienia zabezpieczeń lokalnych
+perfmon.msc -—-> Wydajność (Monitor niezawodności i wydajności)
+services.msc > Usługi
+taskschd.msc ----> Harmonogram zadań
+tscc.msc ----> Konfiguracja usług terminalowych\Połączenia 
+tsmmc.msc ----> Pulpity zdalne 
+wf.msc ----> Zapora systemu Windows z zabezpieczeniami zaawansowanymi 
+wmimgmt.msc ---> Sterowanie usługą WMI (Windows Management Infrastructure)
+    </pre>
+    <h2>Inne</h2>
+    <pre>
+Przekierowanie do pliku (zapis na użytkowniku na dysku C): ipconfig > nazwa.txt
+ECHO test > C:\test\test.txt – tworzenie pliku
+    </pre>
+        <center><a href="praktyka.html"><button class="return-button">Powrót</button></a></center>   
+    </div>
+</body>
+</html>
