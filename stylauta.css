@@ -1,0 +1,59 @@
+.container{
+    max-width: 100%;
+    background-color: rgba(22, 20, 20, 0.699);
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    min-height: 100%;
+}
+
+.baner{
+    width: 80%;
+    height: 80px;
+    background-color: brown;
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 30px;
+    margin: 20px auto; 
+    padding: 10px; 
+}
+
+.info{
+    background-color: white;
+    border-radius: 30px;
+    width: 60%;
+    margin: 20px auto; 
+    padding: 20px; 
+}
+
+.bloki {
+    display: inline-block; 
+    margin: 0 auto; 
+}
+
+.blok1, .blok2, .blok3 {
+    float: left;
+    background-color: white;
+    border-radius: 30px;
+    width: 500px;
+    text-align: center;
+    margin: 0 10px; 
+}
+
+.bloki img {
+    width: 350px;
+    box-shadow: 0 0 20px 10px
+}
+
+.formularz{
+    background-color: white;
+    border-radius: 30px;
+    width: 60%;
+    margin: 20px auto; 
+    padding: 20px;
+    padding-bottom: 40px;
+}
