@@ -1,0 +1,115 @@
+.container{
+    max-width: 100%;
+    background-color: rgba(22, 20, 20, 0.699);
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    padding-bottom: 20px;
+}
+
+.baner{
+    width: 100%;
+    height: 80px;
+    background-color: brown;
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.ogloszenie1, .ogloszenie2, .ogloszenie3, .ogloszni4 {
+    background-color: white;
+    border-radius: 5px;
+    width: 800px;
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.foto {
+    display: flex;
+    margin-right: 40px;
+}
+
+.foto img {
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 20px 10px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.header {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info {
+    text-align: left;
+    padding: 10px;
+}
+
+.filtry {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.filtry h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grupa-filtr {
+    margin-bottom: 15px;
+}
+
+.grupa-filtr label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.grupa-filtr select,
+.grupa-filtr input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.grupa-filtr input:focus,
+.grupa-filtr select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white; 
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+.link{
+    text-decoration: none;  
+    color: black;  
+}
