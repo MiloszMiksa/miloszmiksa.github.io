@@ -19,3 +19,25 @@
     align-items: center; 
 }
 
+.foto {
+    width: 50%;
+    float: left;
+    margin: 60px;
+}
+
+.foto img {
+    width: 900px;
+    box-shadow: 0 0 20px 10px;
+}
+
+.details {
+    width: 40%;
+    float: left;
+    margin-top: 60px;
+}
+
+.inne {
+    float: left;
+    width:100%;
+    background-color: brown;
+}
