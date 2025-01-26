@@ -1,43 +1,79 @@
-.container{
+.container {
     max-width: 100%;
     background-color: rgba(22, 20, 20, 0.699);
-    align-items: center;
     text-align: center;
-    min-height: 100%;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.baner{
+.baner {
     width: 100%;
     height: 80px;
     background-color: brown;
     color: aliceblue;
-    text-align: center;
     font-size: 50px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
 }
 
 .foto {
-    width: 50%;
-    float: left;
-    margin: 60px;
+    width: 40%;
+    margin: 90px;
 }
 
 .foto img {
-    width: 900px;
-    box-shadow: 0 0 20px 10px;
+    width: 100%;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .details {
     width: 40%;
-    float: left;
-    margin-top: 60px;
+    margin: 60px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    text-align: left;
+    color:black;
+    padding: 40px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 60px;
+}
+
+.info {
+    margin: 90px 60px;
+    font-size: 25px;
+}
+
+.opis{
+    background-color: aliceblue;
+    width: 60%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.opis h2{
+    text-align: center;
 }
 
 .inne {
-    float: left;
-    width:100%;
+    width: 100%;
+    height: 70px;
     background-color: brown;
+    color: aliceblue;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
