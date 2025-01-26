@@ -49,7 +49,23 @@
 
 .info {
     margin: 90px 60px;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.przyciski {
+    display:flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white; 
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
 }
 
 .opis{
