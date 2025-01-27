@@ -5,6 +5,7 @@
     text-align: center;
     min-height: 100%;
     padding-bottom: 20px;
+    min-height: 100vh
 }
 #glowna{
     margin-top: 30px;
