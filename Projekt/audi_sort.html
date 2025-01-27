@@ -33,7 +33,7 @@
                         <label for="model">Model</label>
                         <select id="model" name="model">
                             <option value="">Wybierz model</option>
-                            <option value="rs4">RS4</option>
+                            <option value="rs6">RS6</option>
                             <option value="m3">M3</option>
                             <option value="focus">Focus</option>
                             <option value="golf">Golf</option>
@@ -60,38 +60,8 @@
             </div>
 
         <div class="ogloszenia">
-            
-            <a href="bmw.html" class="link"><div class="ogloszenie1">
-                <div class="foto"><img src="bmw.jpg" alt="BMW"></div>
-                <div class="details">
-                    <div class="header">
-                        <span>BMW</span>
-                        <span>Cena: 500 000zł</span>
-                    </div>
-                    <div class="info">
-                        <p><strong>Moc:</strong> 530 KM</p>
-                        <p><strong>Waga:</strong> ok. 1865 kg</p>
-                        <p><strong>Przyspieszenie (0-100 km/h):</strong> 3,6 sekundy</p>
-                    </div>
-                </div>
-            </div></a>
 
-            <a href="ford.html" class="link"><div class="ogloszenie2">
-                <div class="foto"><img src="ford.jpg" alt="Ford"></div>
-                <div class="details">
-                    <div class="header">
-                        <span>Ford</span>
-                        <span>Cena: 170 000zł</span>
-                    </div>
-                    <div class="info">
-                        <p><strong>Moc:</strong> 280 KM</p>
-                        <p><strong>Waga:</strong> ok. 1440 kg</p>
-                        <p><strong>Przyspieszenie (0-100 km/h):</strong> 5,7 sekundy</p>
-                    </div>
-                </div>
-            </div></a>
-
-            <a href="audi.html" class="link"><div class="ogloszenie3">
+            <a href="audi.html" class="link"><div class="ogloszenie2">
                 <div class="foto"><img src="audi.jpg" alt="Audi"></div>
                 <div class="details">
                     <div class="header">
@@ -106,44 +76,9 @@
                 </div>
             </div></a>
 
-            <a href="volkswagen.html" class="link"><div class="ogloszenie1">
-                <div class="foto"><img src="volkswagen.png" alt="Volkswagen"></div>
-                <div class="details">
-                    <div class="header">
-                        <span>Volkswagen</span>
-                        <span>Cena: 2 137zł</span>
-                    </div>
-                    <div class="info">
-                        <p><strong>Moc:</strong> Wystarczająca</p>
-                        <p><strong>Waga:</strong> Zależy od rudej</p>
-                        <p><strong>Przyspieszenie (0-100 km/h):</strong> TAK</p>
-                    </div>
-                </div>
-            </div></a>
-
-        </div>
-        <div class="inne">
-            <a href="strona_glowna.html"><button class="return-button">Powrót</button></a>
         </div>
 
     </div>
-    <script>
-        document.getElementById('filtry-samochodowe').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const selectedBrand = document.getElementById('marka').value; 
-            if (selectedBrand === "ford") {
-                window.location.href = "ford_sort.html";
-            }
-            else if ( selectedBrand === "bmw"){
-                window.location.href = "bmw_sort.html";
-            }
-            else if ( selectedBrand === "audi"){
-                window.location.href = "audi_sort.html";
-            }
-            else if ( selectedBrand === "volkswagen"){
-                window.location.href = "volkswagen_sort.html";
-            }
-        });
-    </script>
+    
 </body>
 </html>
