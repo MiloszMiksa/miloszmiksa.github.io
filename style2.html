@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Miłosz Miksa" />
+    <title>Arkusze stylów 2</title>
+	  <link rel="stylesheet" href="button.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #b81414;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arkusze stylów 2</h1>
+    </header>
+    <div class="content">
+        <ol>
+            <li>Powiatowe Centrum Kształcenia Zawodowego i Ustawicznego</li>
+                <ol type="I" style="color: red;">
+                    <li>Technikum</li>
+                <ol type="a" reversed style="color: green;">
+                        <li>Technikum Gastronomiczne</li>
+                        <li>Technikum Hotelarskie</li>
+                        <li>Technikum Informatyczne</li>
+                            <ul type="square" style="color: orange;">
+                                <li>Klasa1 K</li>
+                                <li>Klasa2 K</li>
+                                <li>Klasa3 K</li>
+                                <li>Klasa4 K</li>
+                            </ul>
+                        <li>Technikum Ekonomiczne</li>
+                    </ol>
+                <li>Szkoła Branżowa
+                    <ul type="circle" style="color: blue;">
+                        <li>I stopnia</li>
+                        <li>II stopnia</li>
+                    </ul>
+                </li>
+            </ol>
+        </ol>
+	<center><a href="zadania.html"><button class="return-button">Powrót</button></a></center>   
+    </div>
+</body>
+</html>
